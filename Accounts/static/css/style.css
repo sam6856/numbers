@@ -1,0 +1,165 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+		font:Sans-serif, Arial;
+    }
+}
+.container{
+	overflow:hidden;
+}
+.container #blur.active{
+	filter:blur(20px);
+}
+.header{
+	margin:0px auto;
+	padding:0px 0px 150px 10px;
+	font-size:120%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	color:#262728;
+}
+.logo{
+	padding:20px 0 20px;;
+}
+.navbar{
+	padding-bottom:100px;
+	text-align:right;
+}
+.navbar ul li{
+	float:center;
+	display:inline;
+	list-style-type:none;
+}
+.navbar ul li a{
+	text-decoration:none;
+	padding:5px;
+	text-align:center;
+	color:#E91E63;
+}
+.navbar ul li a:hover{
+	border-radius:4px;
+}
+.navbar select{
+	visibility:hidden;
+	float:right;
+	color:#182150;
+}
+.info{
+	padding:10px 0 100px 10px;
+	font-size:120%;
+}
+.info {
+	display:flex;
+	text-align:center;
+	padding:40px;
+}
+.info h2{
+	text-align:center;
+	color:#182150;
+}
+.highlight{
+	color:#E91E63;
+	font-weight:bold;
+}
+img{
+	width:60px;
+	height:60px;
+	outline:none;
+	border:none;
+}
+.services{
+	font-sizw:120%;
+	text-align:center;
+	background-color:#182150;
+	color:#ffff;
+	padding-bottom:50px;
+}
+
+.footer{
+}
+.services section{
+	display:inline-block;
+	padding:0 50px 0 50px;
+	line-height:1.7em;
+}
+.services h1, b{
+	color:#fff;
+}
+#popup{
+	font-size:120%;
+	position:fixed;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:30%;
+	height:40%;
+	padding:50px;
+	border:2px solid #191919;
+	border-radius:10px;
+	box-shadow:0 5ps 30px rgba(0,0,0,.30);
+	background:#fff;
+	visibility:hidden;
+	opacity:0;
+}
+#popup button{
+	border:1px solid #191919;
+}
+form input{
+	font-size:70%;
+	width:95%;
+}
+form textarea{
+	width:95%
+}
+#popup.active{
+	visibility:visible;
+	opacity:1;
+	transition:0.5s;
+}
+#popup a{
+	border:1px solid #191919;
+	border-radius:5px;
+	text-decoration:none;
+	color:#E91E63;
+}
+#popup a:hover{
+	background:#182150;
+}
+#openbtn{
+	color:#E91E63;
+	margin-top:10px;
+	border:1px solid black;
+	border-radius:20px;
+	padding:5px;
+	text-decoration:none;
+	float:right;
+	top:100%;
+	left:100%;
+	transform:translate(-100%,0%);
+}
+a:hover{
+	background-color:#182150;
+	transition:.5s;
+}
+.mark{
+	color:#182150;
+}
+#submit{
+	border:1px solid black;
+	border-radius:2px;
+}
+#submit:hover{
+	background-color:#182150;
+}
+@media screen and (max-width: 768px) {
+	*{font-size:100%;}
+    .info{display:block;}
+	.navbar nav{visibility:hidden;}
+	.navbar select{visibility:visible;}
+}
